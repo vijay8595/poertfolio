@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<hr>
+    <header id="menubar">
+        <div class="logo">
+           <h1 id="name">Vijay Kumar</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>Hi, I'm <span class="highlight">Vijay Kumar</span></h1>
+                <p>Java & Full Stack Developer || frontend Developer || Backend Developer</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+            <div class="home-image">
+                <img src="vijay-pic.png" alt="Vijay Kumar">
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2 class="section-title">EXPERIENCE</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>AccioJob | Full-Stack Development Program</h3>
+                <p class="location-date">Gurgaon, Haryana | Feb 2024 - Present</p>
+                <ul>
+                  <li>Imparting knowledge of core data structures and their applications</li>
+                  <li>Enhancing problem-solving skills through hands-on practice</li>
+                  <li>Gaining a deep understanding of Java programming and its applications in web development</li>
+                  <li>Learning how to create dynamic and responsive web interfaces</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills-container">
+            
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill java">85%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <h3>Spring Boot</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill spring">70%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill js">75%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill htmlcss">90%</div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill sql">50%</div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="projects-container">
+    
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Link Shortner</h3>
+                    <p>A web-based tool that converts long URLs into short, manageable links. It tracks usage statistics like click count and expiration time.</p>
+                    <p><strong>Tech Used:</strong> Java, Spring Boot, Postgres</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="simon.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Simon Game</h3>
+                    <p>A memory-based game where players repeat an increasing sequence of colors and sounds. The game tests concentration and memory skills by progressively making sequences longer.</p>
+                    <p><strong>Tech Used:</strong>HTML, CSS, JavaScript</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="portfolio.png" alt="Project 3">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and developed a personal portfolio to showcase my skills and projects.</p>
+                    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript, Spring Boot</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>    
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2 class="section-title">CONTACT ME</h2>
+        <p class="contact-info">Send me a message and I'll get back to you!</p>
+        
+        <div class="contact-container">
+            <form id="contactForm">
+                <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/vijay8595" target="_blank">
+                <img src="githubicon.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/vijay-kumar-6b102a268/" target="_blank">
+                <img src="linkedenIcon.png" alt="LinkedIn">
+            </a>
+           
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
